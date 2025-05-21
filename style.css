@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --blackColor: #000000;
+    --whiteColor: #ffffff;
+    --redColor: #e60b0b;
+    --grayColor: #7e7e7e;
+}
+
+body{
+    background-color: var(--blackColor);
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4f0252;
+    border: 2px solid #2b0028;
+    height: 80px;
+    width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.conteiner{
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--grayColor);
+    padding: 0 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner h1{
+    padding: 10px 0px;
+}
+
+#box div{
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+#box{
+    width: 100%;
+}
+
+#box input{
+    height: 30px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#box button{
+    background-color: #4f0252;
+    color: var(--whiteColor);
+    height: 30px;
+    width: 90px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+
+#box button:hover{
+    scale: 1.1;
+    background-color: #cd21da
+};
+
+#box ul{
+    display: flex;
+}
+
+.liElement a{
+    text-decoration: none;
+    background-color: var(--redColor);
+    color: var(--blackColor);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 4px;
+    transition: 0.9s;
+}
+
+.liElement a:hover{
+    scale: 1.1;
+    background-color: #ee4b4b;
+}
+
+
+.liElement {
+    width: 100%;
+    height: 30px;
+    background-color: #079431;
+    color: var(--blackColor);
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
